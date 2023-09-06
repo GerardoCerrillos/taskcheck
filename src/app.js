@@ -1,10 +1,11 @@
 import express from "express";
 import db from "./Utils/database.js";
 import Task from "./taskcheck/task.model.js";
+import "dotenv/config"
 
 Task;
 
-const PORT = 5000;
+const PORT = process.env.PORT ?? 5000;
 
 db.authenticate()
   .then(() => {console.log('conexion correcta')})
