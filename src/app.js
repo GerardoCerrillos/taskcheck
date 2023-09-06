@@ -1,5 +1,5 @@
 import express from "express";
-import db from "./Utils/database.js";
+import db from "./utils/database.js";
 import Task from "./taskcheck/task.model.js";
 import "dotenv/config"
 
